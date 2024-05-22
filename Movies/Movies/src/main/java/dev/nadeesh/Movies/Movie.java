@@ -13,7 +13,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collation = "movies")
+@Document(collection = "movies")
 public class Movie {
     @Id
       private ObjectId id;
