@@ -4,6 +4,8 @@ import api from './api/axiosConfig';
 import {Layout} from "./Component/Layout";
 import { Route, Routes } from 'react-router-dom';
 import Home from "./Component/home/Home";
+import Header from "./Component/header/header";
+import Trailer from "./Component/Trailer/Trailer";
 
 
 function App() {
@@ -51,10 +53,11 @@ function App() {
   }, [])
   return (
       <div>
+        <Header />
         <Routes>
-             <Route path="/" element={<Layout/>}>
-              <Route path="/" element={<Home movies={movies} />}></Route>
-             </Route>
+             <Route path="/" element={<Layout/>} />
+              <Route path="/" element={<Home movies={movies} />}/>
+             <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}/>
         </Routes>
       </div>
   );
