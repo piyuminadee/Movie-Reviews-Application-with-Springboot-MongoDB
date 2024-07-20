@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from "react";
+import ReactPlayer from "react-player";
 
-
-class Trailer extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+function Trailer(){
+    return(
+        <div className='react-player-container'>
+            {(key!=null) ? <ReactPlayer controls="true" playing={true} url={`https://www/youtube.com/watch?v=${key}`} width='100%' height='100%' /> : null}
+        </div>
+    )
 }
 
 export default Trailer;

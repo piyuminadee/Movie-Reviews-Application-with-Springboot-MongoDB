@@ -5,7 +5,8 @@ import {Layout} from "./Component/Layout";
 import { Route, Routes } from 'react-router-dom';
 import Home from "./Component/home/Home";
 import Header from "./Component/header/header";
-import Trailer from "./Component/Trailer/Trailer";
+import Trailer from './Component/Trailer/Trailer';
+
 
 
 function App() {
@@ -55,9 +56,11 @@ function App() {
       <div>
         <Header />
         <Routes>
-             <Route path="/" element={<Layout/>} />
-              <Route path="/" element={<Home movies={movies} />}/>
-             <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}/>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home movies={movies} />} ></Route>
+            <Route path="/Trailer/:ytTrailerId" element={<Trailer/>}></Route>
+          </Route>
+
         </Routes>
       </div>
   );
