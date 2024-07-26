@@ -22,13 +22,16 @@ Movie Explorer is a web application where users can browse a collection of movie
     ```bash
     git clone https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB.git
     ```
-2. Navigate to the backend directory:
+2. backend :
+   Create mongodb cluster and import belove data <br>
+   <a href="https://github.com/piyuminadee/Movie-Reviews-Application-with-Springboot-MongoDB/blob/main/movies.json">backend data </a>
+
    
-3. Install dependencies and build the project:
+4. Install dependencies and build the project:
     ```bash
     mvn clean install
     ```
-4. Run the Spring Boot application:
+5. Run the Spring Boot application:
     ```bash
     MoviesApplication.java
     ```
@@ -55,6 +58,8 @@ Movie Explorer is a web application where users can browse a collection of movie
     ```bash
     npm start
     ```
+
+    
 
 ## Technologies Used
 - **Backend**: Java, Spring Boot
